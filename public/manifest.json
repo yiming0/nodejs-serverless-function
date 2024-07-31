@@ -3,11 +3,29 @@
     "name": "Hello World",
     "start_url": "./",
     "display": "standalone",
+    "display_override": [
+        "fullscreen",
+        "minimal-ui"
+    ],
     "icons": [
         {
-            "src": "icons/512.png",
+            "src": "assets/icons/512.png",
             "type": "image/png",
             "sizes": "512x512"
         }
+    ],
+    "screenshots": [
+        {
+            "src": "assets/screenshots/screenshot-wide.png",
+            "sizes": "1280x720",
+            "form_factor": "wide"
+        },
+        {
+            "src": "assets/screenshots/screenshot-narrow.png",
+            "sizes": "400x720",
+            "form_factor": "narrow"
+        }
+    ],
+    "shortcuts": [
     ]
 }
