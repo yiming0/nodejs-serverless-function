@@ -1,5 +1,5 @@
 {
-  "repository": "https://github.com/vercel/examples.git",
+  "repository": "https://github.com/yiming0/nodejs-serverless-function/tree/hello-world",
   "license": "MIT",
   "private": true,
   "devDependencies": {
