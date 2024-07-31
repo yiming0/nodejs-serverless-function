@@ -10,12 +10,12 @@ You can choose from one of the following two methods to use this repository:
 
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/examples/tree/main/solutions/node-hello-world&project-name=node-hello-world&repository-name=node-hello-world)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yiming0/nodejs-serverless-function.git&project-name=node-hello-world&repository-name=node-hello-world)
 
 ### Clone and Deploy
 
 ```bash
-git clone https://github.com/vercel/examples/tree/main/solutions/node-hello-world
+git clone https://github.com/yiming0/nodejs-serverless-function.git
 ```
 
 Install the Vercel CLI:
