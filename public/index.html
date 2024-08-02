@@ -6,37 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="manifest.json" />
     <title>Hello</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        body {
-            display: flex;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div>
-        <h1>:)</h1>
-    </div>
+<body class="flex flex-col h-screen">
+
+    <main class="flex flex-col justify-center items-center grow">
+        <h1 class="text-6xl font-bold">:)</h1>
+    </main>
+
+    <footer class="bg-zinc-800 text-white py-2 px-4">
+        <div id="user-info">
+
+        </div>
+    </footer>
 
     <script type="importmap">
         {
             "imports": {
-                "app": "./scripts/app.js"
+                "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.prod.js"
             }
         }
     </script>
     <script type="module">
-        import { registerServiceWorker } from 'app'
+        import app from './scripts/app.js'
 
-        registerServiceWorker('worker.js')
+        app({ worker: 'worker.js' })
     </script>
 </body>
 

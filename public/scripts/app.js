@@ -1,11 +1,20 @@
-export const registerServiceWorker = async (worker_script) => {
+import {createApp} from 'vue'
+import comUserInfo from './userinfo.js'
+
+async function registerServiceWorker(worker) {
     if ('serviceWorker' in navigator) {
         try {
-            const worker = await navigator.serviceWorker.register(worker_script, { scope: './', })
+            const workerRegistration = await navigator.serviceWorker.register(worker, { scope: './', })
         } catch (error) {
             console.error(`Registration failed with ${error}`)
         }
     } else {
         console.error(`ServiceWorker not supported`)
     }
+}
+
+export default function app({ worker }) {
+    registerServiceWorker(worker)
+
+    createApp(comUserInfo).mount('#user-info')
 }
